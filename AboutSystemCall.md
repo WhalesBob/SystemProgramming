@@ -36,5 +36,6 @@
     - 1번째 인자 : 파일이름(ex: argv[1]
     - 2번째 인자 : 정보를 받을 것의 포인터. (&info) . 여기서 info는 struct stat info 이다.
     - 리턴값이 -1 일때는 비정상. 0일 때는 정상리턴.
-  - 
-  
+ 
++ 허가 관련 bit 관리하는 방법 : bit masking
+  - 유저,그룹,다른사람들에 대한 read,write,execute 권한을 관리함. 
