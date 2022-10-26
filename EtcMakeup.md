@@ -46,3 +46,10 @@
 
 + quit : debugger 가 종료된다.
 
+### System Log 저장소
++ /var 에 logging 정보가 다 있다 
+  - 그중에서 /var/run 의 utmp 라는 파일에 유저 로깅 정보가 다 들어잇다고한다.
+  - who 는 이 파일을 parsing 해서 보여주는것이다. 
+  - binary data file 이다. 
+
+
