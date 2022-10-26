@@ -10,6 +10,14 @@
 + Directory 개념 
   - 안에 있는 File 정보들을 담고 있는 특별한 파일.
   - 
+#### Appendix : ls 구현 중 do_ls
+
++ do_ls 하는역할 : 그 디렉토리 안에 잇는 파일 리스트를 하나씩 읽어서, dostat 이라는 함수에 이름을 넘겨줘서 파일을 출력하게끔 하는 역할을 하고 있음
+
++ dostat : 파일 이름을 받아, system call 사용해 정보를 얻어와서 출력해주는 부분
+
++ show_file_info : 파일 이름과, 파일의 다양한 정보를 알려준다. 
+
 
 + dirent 
   - dirent.h 에 관련정보가 있다. 
@@ -39,3 +47,9 @@
  
 + 허가 관련 bit 관리하는 방법 : bit masking
   - 유저,그룹,다른사람들에 대한 read,write,execute 권한을 관리함. 
+
+
++ getpwuid : 유저 아이디 uid_t uid 를 넣으면, struct passwd 를 제공받게 된다. 
+
++ getgrgid : 유저 아이디에서 group 관련으로 넘어간 것이다.
+
